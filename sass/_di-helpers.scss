@@ -1,0 +1,26 @@
+// C O L O R S
+
+
+// alternate color scheme
+// $background: #252821;
+// $highlight-strong: #88d1cb;
+
+$foreground: #c8c8cc;
+$foreground-strong: lighten($foreground, 10%);
+$background: #2a2a2a;
+$highlight-strong: #f24c56;
+$highlight: mix($highlight-strong,white,85%);
+
+
+
+// T Y P E
+
+%all-caps {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+%reversed-text {
+	-webkit-font-smoothing: antialiased; // improves reversed text
+  -moz-osx-font-smoothing: grayscale; // Firefox antialiasing}
+}

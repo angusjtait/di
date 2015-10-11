@@ -1,0 +1,50 @@
+#di {
+  a,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  input,
+  li,
+  ol,
+  p,
+  ul {
+    font-family: inherit;
+    font-size: 14px;
+  }
+  p,
+  ul,
+  li,
+  button,
+  div {
+    font-size: 14px;
+    line-height: 19px;
+    color: $foreground;
+  }
+  a {
+    color: inherit;
+    padding: 0 3px 0 0;
+    border-bottom: 1px solid $highlight;
+    &:focus {
+      outline: none;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $foreground-strong;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0 0 3px;
+  }
+  p {
+    margin: 0 0 10px;
+    max-width: 32em;
+  }
+}
+// end #di

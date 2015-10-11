@@ -1,0 +1,14 @@
+.opts-list {
+  li .btn:after {
+    color: rgba($foreground, 0.2);
+    padding-left: 0.5em;
+    letter-spacing: 0.1em;
+  }
+}
+
+// Add keyboard shortcut reminders for options
+@for $i from 1 through 10 {
+  .opts-list li:nth-of-type(#{$i}) .btn:hover:after {
+    content: ' (#{$i - 1})';
+  };
+}

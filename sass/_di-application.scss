@@ -1,0 +1,152 @@
+#di {
+
+  // C O L U M N S
+  .column-25 {
+    border-left: 1px solid rgba($foreground,0.1);
+    margin-bottom: 14px;
+    max-width: 230px;
+    padding-left: 13px;
+    padding-right: 14px;
+    @media screen and (min-width: 480px) {
+      width: 25%;
+    }
+  }
+  .column-75 {
+    border-left: 1px solid rgba($foreground,0.1);
+    margin-bottom: 14px;
+    padding-left: 13px;
+    padding-right: 14px;
+    width: 75%;
+  }
+  .brd-left {
+    border-left: 1px solid rgba($foreground,0.1);
+  }
+
+  // N A V I G A T I O N
+  .nav-list,
+  .controls-list {
+    margin-left: -13px;
+    width: calc(100% + 27px); // stretch to fill column
+    position: relative;
+    li {
+      line-height: 17px;
+      margin-bottom: 1px;
+    }
+    a,
+    button {
+      display: block;
+      padding: 4px 13px 6px;
+      width: 100%;
+      text-align: left;
+      min-height: 29px;
+    }
+  }
+  .nav-list__sub-nav,
+  .controls-list__sub-nav {
+    margin-top: 1px;
+    li {
+      padding-left: 1em;
+      background: none;
+      margin-bottom: 1px;
+    }
+    button:before,
+    a:before {
+      content: '— ';
+      color: rgba($foreground,0.2);
+    }
+  }
+  .nav-list__link {
+    span {
+      padding: 0 4px 6px 0;
+      background: $background;
+      box-shadow: 0 1px 0 $highlight;
+    }
+    &:hover {
+      color: $highlight;
+    }
+  }
+  .controls-list i {
+    float: right;
+    position: relative;
+    top: 5px;
+    transform-origin: center;
+    transform: scale(0.8);
+  }
+  .controls-list button {
+    position: relative;
+  }
+
+  // Button Hover States
+  .controls-list button:hover {
+    background: rgba($foreground,0.1);
+    cursor: pointer;
+  }
+
+  // Short cut hints
+  .controls-list button:after {
+    color: rgba($foreground, 0.3);
+    opacity: 0;
+    margin-left: 0.25em;
+  }
+  .controls-list button:hover:after {
+    opacity: 1;
+  }
+  #button__option-1:after {
+    content: '(1)';
+  }
+  #button__option-2:after {
+    content: '(2)';
+  }
+  #button__option-3:after {
+    content: '(3)';
+  }
+  #button__outline:after {
+    content: '(O)';
+  }
+  #button__outline-all:after {
+    content: '(O)';
+  }
+  #button__outline-hover:after {
+    content: '(H)';
+  }
+  #button__guides:after {
+    content: '(G)';
+  }
+  #button__show-flexbox {
+
+  }
+  #button__show-selectors {
+
+  }
+  #button__show-command-line {
+
+  }
+  .button__active {
+    color: $highlight;
+    i {
+      transform: scale(1);
+      background: $highlight;
+    }
+  }
+
+  // Reference
+  .button__close-section {
+    padding: 10px 10.5px;
+    position: absolute;
+    z-index: 200;
+    background: $background;
+    margin-left: 1.5px;
+    margin-top: -12px;
+  }
+  .button__close-section:hover {
+    background: mix($foreground,$background,10%);
+    outline: 2px solid mix($foreground,$background,10%);
+  }
+  .di-interface-is-closed {
+    max-width: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all 180ms ease-out;
+    z-index: 0;
+  }
+}

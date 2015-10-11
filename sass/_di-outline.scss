@@ -1,0 +1,53 @@
+
+
+.di-outline {
+  *,
+  *:after,
+  *:before {
+    outline: 1px solid $highlight;
+  }
+
+  #di,
+  #di *,
+  #di *:after,
+  #di *:before {
+    outline: 0;
+  }
+}
+
+.di-outline-hover {
+
+  a,
+  em,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  i,
+  img,
+  li,
+  ol,
+  p,
+  span
+  strong,
+  ul,
+  hr {
+    &:hover {
+      outline:1px solid $highlight;
+    }
+  }
+
+  *:hover:after
+  *:hover:before {
+    outline:1px solid $highlight;
+  }
+
+  #di,
+  #di *,
+  #di *:after,
+  #di *:before {
+    outline: 0;
+  }
+}

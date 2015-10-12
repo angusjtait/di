@@ -28,13 +28,13 @@ Max of 10 options will have shortcut keys available (see below) <br>
 You can add more than 10 and the buttons will work but the shortcuts won't.
 
 ## Current keyboard shortcuts
-`n`, `a` or `v` will open and close the interface
+Typing `n`, `a` or `v` will open and close the interface
 
-`o` will toggle a 1px outline to all elements on the pages
+`o` will toggle a 1px outline on all elements on the pages
 
 `h` will do the same thing but on hover
 
-`1`, `2`, `3`, `4`, or `5` will toggle the options. `0` removes all options.
+Numbers `1` through to `9` will toggle the options. `0` removes all options.
 
 ## The modules
 ### _Pages_

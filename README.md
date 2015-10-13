@@ -40,6 +40,24 @@ Numbers `1` through to `9` will toggle the options. `0` removes all options.
 ### _Pages_
 This is a useful way to navigate through the pages, especially when your project doesn't have it's own navigation built in yet. It's also good for getting to pages that aren't linked within your site, like style-guides and demos and such.
 
-### _Options_
+### _Options (Variations)_
 The options buttons will add the corresponding class to the body of the page. Class name starts with `opt` followed by the option number. Eg, `opt1`, `opt2`.
 This is useful for designing small variations on a page. You can nest different styles within the classes and view them quickly with the shortcut keys.
+
+### _Tools_
+Current tools available:
+
+**Outline** <br>
+Outline will add a 1px outline to all elements on the page. This is useful for trying to find invisible containers. **All** will just outline everything. **Hover** will outline elements on hover. This will often include parent elements too.
+
+**Display keypress/keydown codes** <br>
+When these two dropdowns are open, typing a letter will display the keypress or keydown code. Saves having to look it up on a table somewhere.
+
+**Show guides** (Visible but not yet functional) <br>
+This component will create a grid on screen.
+
+### _Reference_ (visible but not yet functional)
+These will display handy code snippets and cheat sheets
+
+## Compatibility
+This interface is only intended for use on the latest version of Chrome, and has never been tested on [insert any annoying browser here].

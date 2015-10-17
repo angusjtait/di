@@ -337,24 +337,7 @@ button:hover {
   position: relative;
   top: -4px; }
 
-#di .column-25 {
-  border-left: 1px solid rgba(200, 200, 204, 0.1);
-  margin-bottom: 14px;
-  max-width: 230px;
-  padding-left: 13px;
-  padding-right: 14px; }
-  @media screen and (min-width: 480px) {
-    #di .column-25 {
-      width: 25%; } }
-
-#di .column-75 {
-  border-left: 1px solid rgba(200, 200, 204, 0.1);
-  margin-bottom: 14px;
-  padding-left: 13px;
-  padding-right: 14px;
-  width: 75%; }
-
-#di .brd-left {
+#di .border-left {
   border-left: 1px solid rgba(200, 200, 204, 0.1); }
 
 #di .nav-list,
@@ -416,55 +399,6 @@ button:hover {
 #di .controls-list button:hover {
   background: rgba(200, 200, 204, 0.1);
   cursor: pointer; }
-
-#di .controls-list button:after {
-  color: rgba(200, 200, 204, 0.3);
-  opacity: 0;
-  margin-left: 0.25em; }
-
-#di .controls-list button:hover:after {
-  opacity: 1; }
-
-#di #button__option-1:after {
-  content: '(1)'; }
-
-#di #button__option-2:after {
-  content: '(2)'; }
-
-#di #button__option-3:after {
-  content: '(3)'; }
-
-#di #button__outline:after {
-  content: '(O)'; }
-
-#di #button__outline-all:after {
-  content: '(O)'; }
-
-#di #button__outline-hover:after {
-  content: '(H)'; }
-
-#di #button__guides:after {
-  content: '(G)'; }
-
-#di .button__active {
-  color: #f4676f; }
-  #di .button__active i {
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    background: #f4676f; }
-
-#di .button__close-section {
-  padding: 10px 10.5px;
-  position: absolute;
-  z-index: 200;
-  background: #2a2a2a;
-  margin-left: 1.5px;
-  margin-top: -12px; }
-
-#di .button__close-section:hover {
-  background: #3a3a3a;
-  outline: 2px solid #3a3a3a; }
 
 #di .di-interface-is-closed {
   max-width: 0;
@@ -548,11 +482,3 @@ strong:hover,
   background-image: -webkit-linear-gradient(top, #f4676f, transparent 1px);
   background-image: linear-gradient(to bottom, #f4676f, transparent 1px);
   background-size: 100% 25px; }
-
-#di .l-col-25:not(#reference) {
-  width: 0; }
-  #di .l-col-25:not(#reference) * {
-    display: none; }
-
-#di #reference {
-  width: 25%; }

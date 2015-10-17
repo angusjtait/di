@@ -548,3 +548,11 @@ strong:hover,
   background-image: -webkit-linear-gradient(top, #f4676f, transparent 1px);
   background-image: linear-gradient(to bottom, #f4676f, transparent 1px);
   background-size: 100% 25px; }
+
+#di .l-col-25:not(#reference) {
+  width: 0; }
+  #di .l-col-25:not(#reference) * {
+    display: none; }
+
+#di #reference {
+  width: 25%; }

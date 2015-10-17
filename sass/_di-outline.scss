@@ -51,3 +51,23 @@
     outline: 0;
   }
 }
+
+.di-outline-di {
+  *,
+  *:after,
+  *:before {
+    outline: 1px solid $highlight;
+  }
+
+  div {
+    outline: 1px solid rgb(249, 221, 7);
+  }
+
+  ul {
+    outline: 1px solid rgb(59, 13, 233);
+  }
+
+  li {
+    outline: 1px solid rgb(86, 240, 14);
+  }
+}

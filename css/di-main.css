@@ -514,6 +514,20 @@ strong:hover,
 .di-outline-hover #di *:before {
   outline: 0; }
 
+.di-outline-di *,
+.di-outline-di *:after,
+.di-outline-di *:before {
+  outline: 1px solid #f4676f; }
+
+.di-outline-di div {
+  outline: 1px solid #f9dd07; }
+
+.di-outline-di ul {
+  outline: 1px solid #3b0de9; }
+
+.di-outline-di li {
+  outline: 1px solid #56f00e; }
+
 #di .key-number__message__result {
   display: inline-block;
   font-size: 20px;
@@ -529,3 +543,8 @@ strong:hover,
     padding-left: 0; }
   #di .key-number__message__result:last-of-type {
     min-width: 2em; }
+
+.di-baseline {
+  background-image: -webkit-linear-gradient(top, #f4676f, transparent 1px);
+  background-image: linear-gradient(to bottom, #f4676f, transparent 1px);
+  background-size: 100% 25px; }

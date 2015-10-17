@@ -244,6 +244,10 @@ var outlineHover = function() {
   body.toggleClass('di-outline-hover');
 };
 
+var outlineDi = function() {
+  $('#di').toggleClass('di-outline-di');
+};
+
 body.on('click', '#btn-outline-all', function() {
   outlineAll();
   $(this).toggleClass('btn--active');
@@ -254,6 +258,11 @@ body.on('click', '#btn-outline-hover', function() {
   outlineHover();
    $(this).toggleClass('btn--active');
     $('btn-outline-all').removeClass('btn--active');
+});
+
+body.on('click', '#btn-outline-di', function() {
+  outlineDi();
+  $(this).toggleClass('btn--active');
 });
 
 
@@ -285,6 +294,15 @@ var showKeyDown = function() {
   });
 };
 
+// Baseline grid
+var baseline = function(){
+  body.toggleClass('di-baseline');
+};
+
+body.on('click', '#btn-baseline', function() {
+  baseline();
+  $(this).toggleClass('btn--active');
+});
 
   body.on('keydown', function(e) {
     if ($('.jsKeyPress').hasClass('l-expand-down__is-open')) {
@@ -316,6 +334,10 @@ var showKeyDown = function() {
     // 'o'
     if (e.which === 79) {
       outlineAll();
+    }
+
+    if (e.which === 66) {
+      baseline();
     }
 
     });
